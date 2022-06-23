@@ -1,0 +1,126 @@
+/* variables */
+:root {
+  --orange: rgba(252,118,19,255);
+  --white: rgba(252,255,255,255);
+  --light-gray: rgba(159,166,176,255);
+  --med-gray: hsl(216, 12%, 54%);
+  --dark-gray: rgba(38,47,56,255);
+  --dark-blue: rgba(23,30,40,255);
+  --very-dark-blue: rgba(20,21,25,255);
+}
+
+.center-text {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  color: var(--light-gray);
+  background-color: var(--very-dark-blue);
+}
+
+.main-container {
+  position: relative;
+
+  margin-top: 25vh;
+  margin-bottom: 1rem;
+  width: 75vw;
+  max-width: 350px;
+  padding: 20px;
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+}
+
+.add-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.star-circle {
+  height: 40px;
+  width: 40px;
+  background-color: var(--dark-gray);
+  border-radius: 50%;
+}
+
+.star-svg {
+  position: absolute;
+  left: 32px;
+  top: 31px;
+}
+
+h1 {
+  color: var(--white);
+  font-weight: 700; 
+}
+
+.rating-btns-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.rating-btn {
+  height: 40px;
+  width: 40px;
+  color: var(--light-gray);
+  background-color: var(--dark-gray);
+  border: none;
+  border-radius: 50%;
+  transition: background-color .4s ease, color .4s ease;
+}
+
+.rating-btn:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--med-gray);
+}
+
+.rating-btn-selected {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.submit-btn {
+  height: 40px;
+  width: 100%;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  transition: background-color .4s ease, color .4s ease;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.thanks-svg {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rating-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  color: var(--orange);
+  background-color: var(--dark-gray);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
